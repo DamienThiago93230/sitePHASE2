@@ -145,6 +145,7 @@ header a {
 }
 /* fin header */
 
+
 /* nav // navigation */
 nav {
     background: #2980b9;
@@ -178,6 +179,7 @@ nav a:hover {
 }
 /* fin nav */
 
+
 /* les zones principal */
 main {
     background: rgba(178, 178, 178, 0.30);
@@ -196,7 +198,8 @@ section {
 }
 
 footer {
-    height: 300px;
+    margin-top: 20px;
+    height: 200px;
     background: #2980b9;
 }
 /* fin des zones */
@@ -215,15 +218,12 @@ button {
 
 /* page texte voir aussi blockquote */
 
-
-
 .clear {
     clear: both;
 }
 
-
-
 /* fin de page texte */
+
 
 /* page sélecteur */
 
@@ -277,6 +277,7 @@ p {
 }
 /* fin du secteur */
 
+
 /* debut pour image */
 
 .imageFond {
@@ -323,7 +324,6 @@ img[src="img/toureiffel.jpg"] {/* on cible que cette image la */
 /* fin des images */
 
 
-/* pa position */
 /* debut position absolute */
 
 .centre {
@@ -385,15 +385,6 @@ img[src="img/toureiffel.jpg"] {/* on cible que cette image la */
     width: 50%;
     background: orangered;
     padding: 20px;
-
-}
-
-.soixante {
-    font-size: 22px;
-    color: blue;
-    width: 60%;
-    background: orangered;
-    padding: 20px;
 }
 
 .cent {
@@ -404,18 +395,415 @@ img[src="img/toureiffel.jpg"] {/* on cible que cette image la */
     padding: 20px;
 }
 
-/* nav footer */
-
-ul {
-    display: inline-block;
-    position: relative;
-    padding-right: 100px;
-    left: 450px;
+/* page position  */
+.float {
+    height: 170px;
+    width: 170px;
+    background: #fff1ab;
+    margin: 10px;
+    padding-top: 2px;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid darkorange;
 }
 
-li {
-    list-style: none;
-    padding: 20px;
+.dernier {
+    height: 170px;
+    width: 170px;
+    background: #fff1ab;
+    margin: 10px;
+    padding-top: 2px;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid darkorange;
+}
+
+/* Exercice sur le float */
+
+.zone {
+    height: 70px;
+    background: #333;
+}
+
+.zone1, .zone2, .zone3, .zone4 {
+    height: 250px;
+    width: 25%;
+    float: left;
+}
+
+.zone1 {
+    background: #013d42;
+}
+
+.zone2 {
+    background: #07119e;
+}
+
+.zone3 {
+    background: #04a304;
+}
+
+.zone4 {
+    background: #fc986a;
+}
+
+
+
+footer ul {
+    color: white;
+    list-style-type: none;
+    margin-top: 10px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+/* Exercice sur le float */
+
+.flex {
+    display: flex;
+    /* également répartis horizontalement */
+    /* justify-content: space-between;   */
+
+    /* un éspace égal autour de chaque div */
+    justify-content: space-around;
+
+    /* direction e colonne de haut en bas */
+    /* flex-direction: column; */
+
+    /* flex-direction: row-reverse; */
+}
+
+.flex div {
+    width: 150px;
+    height: 150px;
+    background: #a6a9d6;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+/* Page avec le zoning */
+
+/*******Zoning1********/
+
+#zoning1 {
+    background: #333;
+    width: 800px;
+    text-align: center;
+    margin: auto;
+    text-shadow: 1px 1px 2px white;
+}
+
+#zoning1 header {
+    height: 70px;
+    background: yellow;
+}
+
+#zoning1 aside {
+    height: 525px;
+    width: 20%;
+    float: left;  
+    background: #a3de;  
+}
+
+#zoning1 section {
+    height: 525px;
+    width: 80%;
+    float: left;   
+    margin: 0;
+    padding: 0; 
+}
+/******** Fin Zoning1********/
+
+/********Zoning2********/
+
+#zoning2 {
+    background: #333;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    text-shadow: 1px 1px 2px white;
+}
+
+#zoning2 header {
+    height: 70px;
+    background: yellow;
+    text-shadow: 1px 1px 2px white;
+}
+
+#zoning2 aside {
+    height: 525px;
+    width: 20%;
+    float: left;
+    
+}
+
+#zoning2 .middle {
+    float: left;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+/********Fin Zoning2********/
+
+/********Zoning 03********/
+
+#zoning3 {
+    width: 800px;
+    background: plum;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+#zoning3 section {
+    border: 1px solid black;
+    background: blue;
+    height: 525px;
+    width: 50%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#zoning3 footer {
+    height: 70px;
+    width: 100%;
+    float: left;
+    background: #04a304;
+    color: #07119e;
+}
+/********Fin Zoning 03********/
+
+
+/********Zoning 04********/
+    
+#zoning4 {
+    width: 700px;
+    background: white;
+    text-align: center;
+    margin: auto;
+}
+
+#zoning4 header {
+    height: 100px;
+    background: #32ff32;
+}
+
+#zoning4 nav {
+    height: 50px;
+    border: none;
+}
+
+#zoning4 section {
+    height: 500px;
+    margin: 20px;
+    background: #fc986a;
+}
+
+#zoning4 footer {
+    height: 100px;
+    background: mediumslateblue;
+}
+
+/********Fin Zoning 04********/
+
+
+/********Zoning 05********/
+
+#zoning5 {
+    background-color: #013d42;
+    margin: 0 auto;
+    text-align: center;
+    border:  thin solid black;
+}
+
+#zoning5 header {
+    height: 100px;
+    background: linear-gradient(blue, white, red);
+}
+
+#zoning5 nav {
+    height: 50px;
+    background: #176081;
+    border-bottom: 8px solid black;
+}
+
+#zoning5 section {
+    margin: 20px;
+    padding: 0;
+}
+
+#zoning5 .section .z1, .z2, .z3, .z4 {
+    height: 250px;
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+#zoning5 .section .z1, .z2, .z3, .z4 p {
+    line-height: 250px;
+   
+}
+
+#zoning5 .z1, .z4 {
+    background: #6acafc;
+}
+
+#zoning5 .z2, .z3 {
+    background: #32ff32;
+}
+
+#zoning5 footer {
+    height: 100px;
+    background:  linear-gradient(blue, white, red); 
+}
+/********Fin Zoning 05********/
+
+
+/********Zoning 06********/
+
+#zoning6 {
+    width: 800px;
+    margin: 0 auto;
+    color: black;
+}
+
+#zoning6 header {
+   background: #32ff32;
+   height: 200px;
+}
+
+.haut1 {
+    text-align: center;
+    width: 25%;
+    float: left;
+    height: 100%;
+    background: tomato;
+}
+
+.haut2 {
+    text-align: center;
+    width: 50%;
+    float: left;
+    height: 100%;
+    background: teal;
+}
+
+.haut3 {
+    text-align: center;
+    width: 25%;
+    float: left;
+    height: 100%;
+    background: turquoise;
+}
+
+#zoning6 nav {
+    border: none;
+    height: 100px;
+}
+
+#zoning6 aside {
+    width: 25%;
+    height: 700px;
+    float: left;
+    background: darkkhaki;
+}
+
+#zoning6 section {
+    float: left;
+    width: 75%;
+    background: #32ff32;
+    margin: 0;
+    padding: 0;
+}
+
+#zoning6 .a {
+    text-align: center;
+    height: 250px;
+    background: wheat;
+    float: left;
+    width: 50%;
+}
+
+#zoning6 .b {
+    text-align: center;
+    height: 250px;
+    background: rgba(0, 0, 128, 0.781);
+    float: left;
+    width: 50%;
+}
+
+#zoning6 .diaporama {
+    height: 250px;
+    background: aquamarine
+}
+
+#zoning6 .c {
+    text-align: center;
+    height: 200px;
+    width: 25%;
+    float: left;
+    background: pink;
+}
+
+#zoning6 .d {
+    text-align: center;
+    height: 200px;
+    width: 25%;
+    float: left;
+    background: rgb(201, 192, 255);
+}
+
+#zoning6 .e {
+    text-align: center;
+    height: 200px;
+    width: 25%;
+    float: left;
+    background: pink;
+}
+
+#zoning6 .f {
+    text-align: center;
+    height: 200px;
+    width: 25%;
+    float: left;
+    background: rgb(201, 192, 255);
+}
+/********Fin Zoning 06********/
+
+
+/********page tableau********/
+
+.tableau table {
+    border-collapse: collapse;
+    border: 5px solid black;
+    margin: auto;
+    width: 80%;
+    padding: 5px
+}
+
+.tableau td {
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.tableau thead, .tableau tfoot {
+    background: #2980b9;
+    border: 5px solid black;
+    text-align: center;
+}
+
+.tableau caption {
+    background: linear-gradient(green, white, red) ;
+    border: 5px solid black;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 5px;
 }
 
 

@@ -14,7 +14,7 @@
     <meta name="keywords" content="HTML, CSS, damien santo, lepoles, pantin">
     <!-- L'auteur de la page  -->
     <meta name="author" content="Damien Santo" >
-    <title>Site PHASE 2 - Position</title>
+    <title>Site PHASE 2 - Tableau</title>
     <!-- Ma feuille de style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -48,9 +48,9 @@
             <a href="texte.html" title="Texte">Texte</a>
             <a href="selecteur.html" title="Sélecteur">Sélecteur</a>
             <a href="image.html" title="Image">Image</a>
-            <a href="position.html" title="Position" class="active">Position</a>
+            <a href="position.html" title="Position">Position</a>
             <a href="zoning.html" title="Zoning">Zoning</a>
-            <a href="tableau.html" title="Tableau">Tableaux</a>
+            <a href="tableau.html" title="Tableau" class="active">Tableau</a>
             <a href="liste.html" title="Liste">Liste</a>
             <a href="lien_menu.html" title="Lien_menu">Lien</a>
             <a href="formulaire.html" title="Formulaire">Formulaire</a>
@@ -60,79 +60,70 @@
     </nav><!-- fin nav -->
 
     <main><!-- contenu principal -->
-        <section>
-            <h3>Centrer un élément de type block</h3>
-            <div class="centre">N° 1</div>
-        </section><!-- fin section 1 -->
+        <h2>Tableau</h2>
+        <section class="tableau">
+           <table>
+               <!-- la légende du tableau -->
+               <caption>Vols///<i class="fas fa-plane"></i> Paris - Rome</caption>
+               <thead>
+                    <tr>
+                        <td>Date</td>
+                        <td>02/08/2017</td>
+                        <td>03/08/2017</td>
+                        <td>05/08/2017</td>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td>Date</td>
+                        <td>02/08/2017</td>
+                        <td>03/08/2017</td>
+                        <td>05/08/2017</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Air France</td>
+                        <td>Départ 10 h - Arrivé 13 h</td>
+                        <td>Départ 15 h - Arrivé 18 h</td>
+                        <td>Départ 17 h - Arrivé 20 h</td>
+                    </tr>
 
-            <hr width="50%">
+                    <tr>
+                        <td>200 €</td>
+                        <td>180 €</td>
+                        <td>170 €</td>
+                    </tr>
 
-        <section>
-            <h3>Position absolute</h3>
-            <p>N°2  : un carrée jaune ; regardez en haut</p>
-            <div class="absolute">N° 2</div>
-       </section><!-- fin section 2 -->
+                    <tr>
+                        <td rowspan="2">Alitalia</td>
+                        <td>Départ 6 h - Arrivé 9 h</td>
+                        <td>Départ 13 h - Arrivé 16 h</td>
+                        <td>Départ 21 h - Arrivé 00 h</td>
+                    </tr>
 
-        <section>
-            <h3>Position relative</h3>
-            <div class="relative">
-                <div>N° 3</div>
-            </div>
-        </section><!-- fin section 3 -->
+                    <tr>
+                        <td>180 €</td>
+                        <td>150 €</td>
+                        <td>130 €</td>
+                    </tr>                    
+                </tbody>                
+            </table>            
+        </section>
 
-        <section>
-            <h3>Position fixed</h3>
-            <p>cf. le boutton vers le haut (embas a droite)</p>
-        </section><!-- fin section 4 -->
 
-        <section>
-            <h3>Le pourcentage</h3>
-            <div class="trente">30%</div>
-            <div class="cinquante">50%</div>
-            <div class="cent">100%</div>
-        </section><!-- fin section 5 -->
 
-        <section>
-            <h3>L'attribut float</h3>
-            <div class="float">1</div>
-            <div class="float">2</div>
-            <div class="float">3</div>
-            <div class="float">4</div>
-            <div class="float clear">5</div>
-            <div class="float">6</div>
-            <div class="float">7</div>
-            <div class="float clear">8</div>
-            <div class="float">9</div>
-            <div class="clear dernier">10</div>
-        </section><!-- fin section 6 -->
 
-        <section>
-            <h3>Exercice sur le float</h3>
-            <div class="zone"></div>
-            <div class="zone1"></div>
-            <div class="zone2"></div>
-            <div class="zone3"></div>
-            <div class="zone4"></div>
-            <div class="zone clear"></div>
-        </section><!-- fin section 7 -->
 
-        <section>
-            <h3>Flexbox</h3><!-- sa palce en fonction de lélément parent -->
-            <article class="flex">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-            </article>
-            
-        </section><!-- fin section 8 -->
 
     </main><!-- fin id main -->
 
+
+
+
     <footer>
-                  
+        <!-- pied de page -->
     </footer><!-- fin footer -->
-    
     
 </body>
 </html>
