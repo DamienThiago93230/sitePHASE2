@@ -52,13 +52,12 @@
             <a href="zoning.html" title="Zoning">Zoning</a>
             <a href="tableau.html" title="Tableau">Tableaux</a>
             <a href="liste.html" title="Liste">Liste</a>
-            <a href="lien_menu.html" title="Lien_menu" class="active">Lien</a>
+            <a href="lien_menu.html" title="Lien_menu" class="active">Lien</a><!-- class active pour visualiser sur quelle page nous sommes  -->
             <a href="formulaire.html" title="Formulaire">Formulaire</a>
             <a href="multimedia.html" title="Multimedia">Multimédia</a>
             <a href="animation.html" title="Animation">Animation</a>
         </div>
     </nav><!-- fin nav -->
-
     <main><!-- contenu principal -->
         <div class="ancre">
             <a href="#lien">Les liens</a>
@@ -75,6 +74,7 @@
             <!-- télécharger un .pdf -->
             <a href="fichiers/Planning Pantin 2018-2019 V4(2).pdf" target="_blank" title="Planing LePoles">Télécharger le planing LepoleS 2018-2019</a>
             <br>
+            <!-- Permet d'afficher le menu parcourir -->
             <a href="#" onclick="window.print()">Imprimer la page</a>
             <br>
             <a href="http://www.auvergne-tourisme.info/" target="_blank" title="Tourisme"><img src="img/volcans.jpg" alt="volcan" width="260px"></a>
@@ -90,18 +90,16 @@
             </nav><!-- fin de nav -->
         </section>
         <hr>
-
-
-        <section id="menuDeroulant">
+       <section id="menuDeroulant">
             <h3>Les menus déroulants</h3>
             <nav>
-                <ul class="niveau1">
+                <ul class="niveau1">                   
                     <li><a href="#" title="Accueil">Accueil</a></li>
-                    <li class="sousMenu">
+                    <li class="sousMenu">                        
                         <a href="#" title="Formation">Formation</a>
                              <!-- ul>li*4>a -->
-                        <ul class="niveau2">
-                            <li><a href="#">Etudiants</a></li>
+                        <ul class="niveau2"><!-- ul qui contient des sous menus -->
+                            <li><a href="#">Etudiants</a></li><!-- li les sous menu dans le ul -->
                             <li><a href="#">Emploi du temps</a></li>
                             <li><a href="#">Recherche d'emploi</a></li>
                             <li><a href="#">Documents</a></li>
@@ -121,21 +119,13 @@
                             <li><a href="#">Marketing</a></li>
                             <li><a href="#">Cahier des charges</a></li>
                             <li><a href="#">Photoshop</a></li>
-                        </ul>
-                    
+                        </ul>                  
                     </li>
                     <li><a href="#" title="Mon CV">Mon CV</a>
                     </li>
                 </ul>
             </nav>
         </section>
-        
-
-
-
-
-
-
     </main><!-- fin id main -->
 
     <footer>
