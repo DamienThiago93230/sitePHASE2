@@ -59,6 +59,10 @@ h2 {
     text-shadow: 1px 1px 2px #aaa;
 }
 
+h2 i {
+    color: #2980b9;
+}
+
 h3 {
     
     font-size: 22px;
@@ -774,7 +778,7 @@ footer ul {
 /********Fin Zoning 06********/
 
 
-/********page tableau********/
+/********Page tableau********/
 
 .tableau table {
     border-collapse: collapse;
@@ -806,7 +810,7 @@ footer ul {
     padding-left: 5px;
 }
 
-/********la page des listes********/
+/********La page des listes********/
 
 ul.fruit {
     list-style: none;
@@ -878,7 +882,7 @@ li .far:hover {
 
 /********Fin page des liens********/
 
-/********la nav dans l'id menu********/
+/********La nav dans l'id menu********/
 
 #menu nav {
     background: transparent;
@@ -908,7 +912,7 @@ li .far:hover {
 }
 /********Fin de la nav dans l'id menu********/
 
-/********le menu avec les menu déroulant********/
+/********Le menu avec les menu déroulant********/
 
 #menuDeroulant {
     height: 650px;
@@ -983,7 +987,7 @@ label[for="orange"], label[for="fraise"], label[for="mangue"], label[for="cerise
 /********Fin page formulaire********/
 
 
-/********Page mutimedia********/
+/********Page mutimédia********/
 
 .videoFond {
     padding-left: 0;
@@ -999,7 +1003,7 @@ label[for="orange"], label[for="fraise"], label[for="mangue"], label[for="cerise
 .videoTexte {
     position: relative;/* la position relative permet de décaler un élément par rapport a sa position normal */  
     width: 100%;
-    height: 521px;
+    height: 600px;
 }
 
 .videoFond p {
@@ -1015,7 +1019,95 @@ label[for="orange"], label[for="fraise"], label[for="mangue"], label[for="cerise
     border-radius: 10px;
     text-align: center;
 }
-/********Fin page mutimedia********/
+
+/* pour la vidéo youtube */
+
+iframe[src="https://www.youtube.com/embed/MHYWgf3VqoY"] {
+    width: 100%;
+}
+
+/****Pour l'audio****/
+
+.audio {
+    text-align: center;
+}
+/****Pour l'iFrame****/
+iframe[allowfullscreen] {
+    width: 100%;
+}
+
+.bordure {
+    border: 10px solid rgb(3, 3, 206);
+    background: linear-gradient(blue, white, red);   
+}
+/********Fin page mutimédia********/
+
+/********Page animation********/
+
+.infoBulle {
+    height: 250px;
+    width: 500px;
+    margin: auto;
+    padding-top: 15px;
+    background: #069;
+    box-shadow: 0 0 50px #222 inset;
+    border-radius: 20px 0 20px 0;
+
+}
+
+.infoBulle p {
+    background: transparent;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.infoBulle a {
+    color: #ccc;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 5px 15px;
+    text-shadow: 0 -2px 0 black;
+}
+
+.infoBulle a:hover {
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    text-shadow: 0 1px 2px black;
+    box-shadow: 0 3px 0 rgba(255, 255, 255, .4);
+}
+
+.infoBulle a span {
+    position: absolute;
+    padding: 15px;
+    margin-top: 23px;
+    margin-left: -35px;
+    background: rgba(0, 0, 0, .9);
+    opacity: 0;
+    /* le contenu de span disparait grace a cette ligne  */
+    color: #09c;
+    /* la mis a l'echelle transform scale(0) fait disparaitre aussi */
+    transform: scale(0) rotateZ(-12deg);   
+    transition: .25s;
+    border-radius: 20px 0 20px 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .5); 
+}
+
+.infoBulle a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+}
+
+.infoBulle a span:before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -10px;
+    border-bottom: 6px solid rgba(0,0,0,.9);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+/********Fin page animation********/
 
 
 

@@ -7,7 +7,6 @@
     <!-- les typo google font anton, lemonada et oswald -->
     <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada:300,400|Oswald:300,400" rel="stylesheet"> 
     <!-- font awesome en cdn -->
-    <!-- font awesome en cdn -->
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> --> 
     <!-- fontawesome en local -->
     <link rel="stylesheet" href="css/fontawesome-all.css">
@@ -17,7 +16,7 @@
     <meta name="keywords" content="HTML, CSS, damien santo, lepoles, pantin">
     <!-- L'auteur de la page  -->
     <meta name="author" content="Damien Santo" >
-    <title>Site PHASE 2 - Multimédia</title>
+    <title>Site PHASE 2 - Animation</title>
     <!-- Ma feuille de style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -47,7 +46,7 @@
     <nav>
         <!-- zone du menu les liens pour passer de page en page -->
         <div class="ancreNav">
-            <a href="index.html" title="Accueil">Acceuil</a>
+            <a href="index.html" title="Accueil">Acceuil</a><!-- class active pour visualiser sur quelle page nous sommes  -->
             <a href="texte.html" title="Texte">Texte</a>
             <a href="selecteur.html" title="Sélecteur">Sélecteur</a>
             <a href="image.html" title="Image">Image</a>
@@ -57,55 +56,34 @@
             <a href="liste.html" title="Liste">Liste</a>
             <a href="lien_menu.html" title="Lien_menu">Lien</a>
             <a href="formulaire.html" title="Formulaire">Formulaire</a>
-            <a href="multimedia.html" title="Multimedia" class="active">Multimédia</a><!-- class active pour visualiser sur quelle page nous sommes  -->
-            <a href="animation.html" title="Animation">Animation</a>
+            <a href="multimedia.html" title="Multimedia">Multimédia</a>
+            <a href="animation.html" title="Animation" class="active">Animation</a>
         </div>
     </nav><!-- fin nav -->
 
     <main><!-- contenu principal -->
-        <h2>Mulimédia <i class="fas fa-video"></i> et <i class="fas fa-headphones"></i></h2>
-        <section class="videoFond">
-            <h3>Une vidéo en fond</h3>
-            <div class="videoTexte">
-                <video autoplay loop><!-- lecture en boucle -->                  
-                    <source src="video/videoBackground.mp4" type="video/mp4"><!-- Permet de mettre une vidéo en fond -->                     
-                </video>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, accusamus! Laudantium expedita ad sint doloribus harum reprehenderit quidem sapiente, voluptas praesentium eum aperiam, dolorem et neque iste ea? Nulla, ad.</p>
+        <h2>Animation en CSS</h2>
+        <section>
+            <h3>Infobulles - <i class="fas fa-comment-alt"></i></h3>
+            <div class="infoBulle">
+                <p>
+                    <a href="#">Passez la souris !<span>Coucou ; je suis une pop-up  <i class="fas fa-comment-alt"></i></span></a> 
+                </p>
+                <p>
+                    <a href="#">Ici aussi... <span>et moi aussi ; je suis une pop-up</span></a>
+                </p>
+                <p>
+                    <a href="#">Une fois encore, allez ! <span>Et moi je suis la benjamine ;-)</span></a>
+                </p>
             </div>
         </section>
-    <hr>
-        <section>
-            <h3>Vidéo Youtube</h3>
-            <iframe height="400" src="https://www.youtube.com/embed/MHYWgf3VqoY" frameborder="0" allowfullscreen></iframe>
-        </section>
-    <hr>
-        <section class="audio">
-            <h3>Audio</h3>
-            <h4>Format mp3</h4>
-            <br>
-            <audio src="audio/son.mp3" controls></audio>
-            <hr>
-            <h4>Format Ogg</h4>
-            <br>
-            <audio src="audio/son.ogg" controls></audio>  
-            <hr>
-            <h4>Son d'oiseau</h4>
-            <br>
-            <audio src="audio/sf_ambi_oiseaux_campagne_01.mp3" controls></audio>         
-        </section>
-        <section>
-            <h3>Google map</h3>
-            <br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.619767694167!2d0.8787023156726947!3d43.21746388851484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a91f0e618482b9%3A0x845835fc2d6d3afa!2sBureau+d&#39;Information+Touristique+d&#39;Aurignac!5e0!3m2!1sfr!2sfr!4v1528962520106" width="600" height="450" allowfullscreen></iframe>
-        </section>
-        <br>
-    <hr>
-        <section class="bordure">
-            <iframe height="600" src="https://www.24mx.fr/" allowfullscreen></iframe>
-        </section>
     </main><!-- fin id main -->
-    <footer>       
+
+    <footer>
+        
         <!-- pied de page -->
-    </footer><!-- fin footer -->   
+    </footer><!-- fin footer -->
+    
+    
 </body>
 </html>
