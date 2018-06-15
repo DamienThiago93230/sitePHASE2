@@ -60,14 +60,13 @@ h2 {
 }
 
 h2 i {
-    color: #2980b9;
+    color: #09c;
 }
 
-h3 {
-    
+h3 {   
     font-size: 22px;
     color: #2c3e50;
-    padding: 15px;
+    padding: 3px;
     text-shadow: 1px 1px 2px #aaa;
 }
 
@@ -196,8 +195,10 @@ main {
 }
 
 aside {
-    height: 250px;
-    background: #a6d6b3;
+    width: 250px;
+    height: 484px;
+    float: left;
+    /* border: 2px solid black; */
 }
 
 section {
@@ -205,10 +206,33 @@ section {
     padding: 20px;
 }
 
+.bleublancrouge {
+    margin-top: 20px;
+    margin-top: 0;
+    width: 750px;
+    float: right;
+    border-radius: 0px 100px 100px 0px;
+    text-align: left;
+    background: linear-gradient(blue, white, red);
+}
+
+.aside2 {
+    width: 250px;
+    height: 534px;
+    background: linear-gradient(blue, white, red);
+    float: left;
+    border: 2px solid black;
+}
+
+.arondi {
+    margin-top: 20px;
+    border-radius: 20px 100px 100px 20px;
+}
+ 
 footer {
     margin-top: 20px;
     height: 200px;
-    background: #2980b9;
+    background: #222;
 }
 /* fin des zones */
 
@@ -220,7 +244,7 @@ button {
     border: none;
     color: #2c3e50;  
     position: fixed;/* le button est fixe a 40px et a 20px de la droite */
-    bottom: 40px;
+    bottom: 100px;
     right: 20px;  
 }
 
@@ -1205,8 +1229,8 @@ iframe[allowfullscreen] {
     top: 0;
     left: 50%;
     margin-left: -75px;
-    width: 150px;
-    height: 155px;
+    width: 170px;
+    height: 170px;
     color: black;
     text-align: center;
     background: #6acafc;
@@ -1215,13 +1239,22 @@ iframe[allowfullscreen] {
     animation: bounceOut 0.7s ease-in-out;
 }
 
+.menu { /* menu animé */
+    border: 3px solid white;
+    border-radius: 10px 10px 40px 40px;
+}
+
+.btnRot {
+    font-size: 20px;
+}
+
 #menuRotate dd {
     transform: rotate(180deg);
 }
 
 #menuRotate dt {
     position: absolute;
-    bottom: 0;
+    bottom: 13px;
     width: 100%;
     height: 23px;
     padding-top: 5px;
@@ -1238,21 +1271,33 @@ iframe[allowfullscreen] {
 
 #menuRotate dl:hover {
     transform: rotate(-180deg);
-    animation: bouceIn 0.7s ease-in-out;
+    animation: bounceIn 0.8s ease-in-out;
 }
 
 #menuRotate dd:hover {
     background: rgba(173, 155, 155, 0.678);
 }
 
-
-
+/* La règle @ @keyframes permet aux auteurs de définir les étapes qui composent la séquence d'une animation CSS */
 
 
 /********Fin rotation d'un menu en css 3********/
 
+/********Animation********/
+@keyframes bounceIn {
+    from {transform: rotate(0deg);}/* From début animation */ 
+    75% {transform: rotate(-200deg);}
+    90% {transform: rotate(-175deg);}
+    to {transform: rotate(-180deg);}/* To fin animation */
+}
 
-
+@keyframes bounceOut {
+    from {transform: rotate(0deg);}/* From début animation */ 
+    0% {transform: rotate(-180deg);}
+    10% {transform: rotate(-165deg);}
+    to {transform: rotate(-360deg);}/* To fin animation */
+}
+/********Fin animation********/
 
 
 
