@@ -1,0 +1,93 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, 
+b, u, i, center, 
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, 
+time, mark, audio, video { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    /* toute la fenetre */
+    background: bisque;
+    margin: 0 auto;
+}
+
+#container {
+    border-radius: 30px 30px 0px 0px;
+    background: red;
+    width: 1200px;
+    height: 900px;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+header { 
+    font-size: 3em;
+    background: green;
+    /* border-radius: 30px 30px 0px 0px; */
+    height: 200px;
+    /* background: yellow; */  
+}
+
+nav {  
+    font-size: 3em;
+    background: lightblue;
+    width: 1200px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+section{  
+    background:pink;
+    height: 500px;
+    margin: 50px;
+}
+
+
+footer {
+    font-size: 3em;
+    background: yellow;
+    height: 100px;
+    /* margin: 0 auto; */
+    width: 1200px;
+    text-align: center;
+    
+}
+
+
+/* pour les image  */
+
+
+.imgvoilier {
+    float: left;
+    
+}
+
+/* pour mettre la caption la légende sur l'image */
+figure {
+   position: relative;
+   padding-top: 30px;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+                 /* Zoning03 */
+/* ***************************************************** */

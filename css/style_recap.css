@@ -175,3 +175,24 @@ mark{
 .float {
     background: lightsalmon;
 }
+
+.font-weight {
+    font-weight: 900;
+}
+
+.font-weight2 {
+    font-weight: 700;
+}
+
+.letter-spacing {
+    letter-spacing: 5px;
+}
+
+.shadow {
+    
+    text-shadow: 5px 10px red;
+}
+
+.background {
+    background-image: url('img/logo.png');
+}
