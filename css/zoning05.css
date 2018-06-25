@@ -1,0 +1,64 @@
+
+body {
+    background: pink;
+}
+
+.navBar {
+    background: rgb(41, 39, 39);
+    position: fixed;/* le menu est fixée en haut de page */
+    top: 0;/* tou en haut de page */
+    left: 0;/* tout a gauche */
+    width: 100%;/* toute la largeur */
+    height: 60px;
+}
+
+.navBar a {
+    display: block;
+    float: right;
+    color: rgb(103, 103, 202);
+    text-align: center;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navBar a:hover {
+    color: white;
+    background: rgb(103, 103, 202);
+    border-radius: 25px 25px 0 0;
+
+}
+
+.logo {
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 10px;
+    z-index: 10;
+    background: rgb(103, 103, 202);
+    color: white;
+    border-radius: 25px 25px 0 0;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+#container {
+    margin: auto;
+    background: green;
+    width: 1200px;
+    height: 1000px;
+    margin-bottom: 10px;
+}
+
+.main {
+    height: 500px;
+    margin: 10px;
+    background: white;
+}
+
