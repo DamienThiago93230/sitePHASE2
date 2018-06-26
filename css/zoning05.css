@@ -1,6 +1,6 @@
 
 body {
-    background: pink;
+    background: white;
 }
 
 .navBar {
@@ -45,20 +45,134 @@ body {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    
 }
 
 #container {
-    margin: auto;
-    background: green;
-    width: 1200px;
-    height: 1000px;
-    margin-bottom: 10px;
+    background: pink;
+    margin:  auto;
+    width: 70%;
+    height: 2000px;
+    margin-top: 40px;
+    padding: 20px;
 }
 
-.main {
-    height: 500px;
-    margin: 10px;
+.section {
     background: white;
+    width: 90%;
+    height: 1910px;
+    margin: 0 auto;
+    border: 7px solid green;
+}
+
+.fondOrange {
+    background: lightsalmon;
+}
+
+.orange {
+    background: orangered;
+    width: 100%;
+    height: 200px;
+}
+
+.violet {
+    background: purple;
+    width: 100%;
+    height: 200px;
+}
+
+.rouge {
+    background: red;
+    width: 100%;
+    height: 400px;
+}
+
+.centre {
+    padding: 20px;
+}
+
+figure {
+    width: 150px;
+    height: 300px;
+   
+ }
+ 
+figcaption {
+    position: relative;
+    bottom: 20px;
+    width: 150px;
+    color: white;
+    /* background: lightblue; */
+}
+
+aside {
+    float: left;
+    width: 200px;
+}
+
+article {
+    background: white;
+    float: right;
+    width: 500px;
+    /* padding: 60px; */
+    margin-top: 0;
+}
+
+footer {
+    background: rgb(41, 39, 39);
+    position: fixed;/* le menu est fixée en haut de page */
+    bottom: 0;/* tou en haut de page */
+    left: 0;/* tout a gauche */
+    width: 100%;/* toute la largeur */
+    height: 40px;
+    text-align: center;
+    color: white;
+}
+
+
+
+.main {
+    background: yellow;
+}
+
+.formulaire {
+    padding: 10px;
+}
+
+.fondBleu {
+    background: lightblue;   
+}
+
+.fondVert {
+    background: lightgreen;   
+}
+
+.formulaireRouge {
+    padding: 15px;
+    float: right;
+    text-align: center;
+}
+
+.championnat {
+    border-radius: 30px;
+    margin-top: 0;
+    margin-left: 300px;
+    width: 50%;
+    height: 100px;
+    background: white;
+    text-align: center;
+}
+
+hr {
+    background: black;
+    width: 80%;
+    height: 2px;
+}
+
+h3 {
+    margin-left: 300px;
+    width: 50%;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2em;
 }
 

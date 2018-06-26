@@ -248,6 +248,16 @@ button {
     right: 20px;  
 }
 
+.boutonHaut {
+    font-size: 350%;
+    background: transparent;
+    border: none;
+    color: #2c3e50;  
+    position: fixed;/* le button est fixe a 40px et a 20px de la droite */
+    bottom: 100px;
+    right: 20px;  
+}
+
 /* page texte voir aussi blockquote */
 
 .clear {
@@ -1186,7 +1196,7 @@ iframe[allowfullscreen] {
 
 /********Rotation d'un menu en css 3********/
 
-#menuRotate {
+.menuRotate {
     height: 360px;
     width: 576px;
     margin: 100px auto;
@@ -1198,7 +1208,7 @@ iframe[allowfullscreen] {
     border-radius: 50px 50px 50px 50px;
 }
 
-#menuRotate .masque{
+.menuRotate .masque{
     /* cette div masque le menu */
     /* position absolue par rapport a l'article */
     position: absolute;
@@ -1211,7 +1221,7 @@ iframe[allowfullscreen] {
     background: linear-gradient(#2c3e50, #09c);
 }
 
-#menuRotate .ombre {
+.menuRotate .ombre {
     /* cette div est positionnée au bas de  .masque et donne une impression de relief */
     position: absolute;
     /* en dessous de la pile */
@@ -1224,7 +1234,7 @@ iframe[allowfullscreen] {
     left: 142px; 
 }
 
-#menuRotate dl {
+.menuRotate dl {
     position: relative;
     top: 0;
     left: 50%;
@@ -1248,11 +1258,11 @@ iframe[allowfullscreen] {
     font-size: 20px;
 }
 
-#menuRotate dd {
+.menuRotate dd {
     transform: rotate(180deg);
 }
 
-#menuRotate dt {
+.menuRotate dt {
     position: absolute;
     bottom: 13px;
     width: 100%;
@@ -1260,7 +1270,7 @@ iframe[allowfullscreen] {
     padding-top: 5px;
 }
 
-#menuRotate dd a {
+.menuRotate dd a {
     color: white;
     display: block;
     text-decoration: none;
@@ -1269,12 +1279,12 @@ iframe[allowfullscreen] {
     color: white;
 }
 
-#menuRotate dl:hover {
+.menuRotate dl:hover {
     transform: rotate(-180deg);
     animation: bounceIn 0.8s ease-in-out;
 }
 
-#menuRotate dd:hover {
+.menuRotate dd:hover {
     background: rgba(173, 155, 155, 0.678);
 }
 

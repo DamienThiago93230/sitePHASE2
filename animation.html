@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- les typo google font anton, lemonada et oswald -->
-    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada:300,400|Oswald:300,400" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Anton Lemonada:300,400|Oswald:300,400" rel="stylesheet"> 
     <!-- font awesome en cdn -->
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> --> 
     <!-- fontawesome en local -->
@@ -24,24 +24,22 @@
     <header>
         <div id="logo">
             <a href="#logo">
-                <button type="button"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+                <!-- <button type="button"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button> -->
+                <span class="boutonHaut"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></span>
             </a>
             <img src="img/logo.png" alt="logo">
         </div><!-- fin id logos -->
-
         <div id="slogan">
             <a href="index.html" title="Mon premier site en HTML accueil">
                 <h1>Mon premier site en HTML5  et CSS3 <i class="fab fa-css3-alt"></i> <i class="fab fa-html5"></i></h1>
             </a>
         </div><!-- fin id slogan -->
-
         <div id="social">
             <a href="https://www.instagram.com/?hl=fr" target="_blank"><i class="fab fa-instagram" aria-hidden="true"> Instagram</i></a>
             <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-square" aria-hidden="true"> Facebook</i></a>
         </div><!-- fin id social -->
 
         <div class="clear"></div><!-- reprend le flux normal -->
-
     </header><!-- fin header -->
     <nav>
         <!-- zone du menu les liens pour passer de page en page -->
@@ -60,7 +58,6 @@
             <a href="animation.html" title="Animation" class="active">Animation</a>
         </div>
     </nav><!-- fin nav -->
-
     <main><!-- contenu principal -->
         <h2>Animation en CSS <i class="fab fa-reddit-alien"></i></h2>
         <section>
@@ -77,7 +74,6 @@
                 </p>
             </div>
         </section>
-
         <section>
             <h3>Effets de survol avec des transitions et des filtres --<i class="fas fa-hand-point-right"> <i class="fas fa-bicycle"></i></i></h3>
             <!-- image dans les ul -->
@@ -88,11 +84,10 @@
                 <li><img src="img/survol_img4.jpg" alt="la nature c'est beau"></li>
             </ul>
         </section>
-        <hr>
-        
+        <hr>       
         <section>
             <h3>Rotation d'un menu en CSS3 <i class="fab fa-css3"></i></h3>
-            <article id="menuRotate">
+            <article class="menuRotate">
                 <dl class="menu">
                     <dt class="btnRot">Partager</dt>
                     <dd><a href="#">...</a></dd>
@@ -102,22 +97,12 @@
                 </dl>
                 <div class="masque"></div>
                 <div class="ombre"></div>
-            </article>
-            
+            </article>          
         </section>
         <div class="clear"></div>
-
-
-
-
-
     </main><!-- fin id main -->
-
-    <footer>
-        
+    <footer> 
         <!-- pied de page -->
-    </footer><!-- fin footer -->
-    
-    
+    </footer><!-- fin footer -->  
 </body>
 </html>

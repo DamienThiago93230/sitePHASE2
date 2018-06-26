@@ -9,22 +9,151 @@
     <title>NavBar</title>
 </head>
 <body>
-    <div class="logo">
-        <a href="#">Coucou</a>
+    <div class="logo"><!-- debut logo -->
+        <a href="#">Bienvenue</a>
     </div>
-    <div class="navBar">
-        <a href="#contact">Contact</a>
-        <a href="#actu">Actualités</a>
-        <a href="#accueil">Accueil</a>       
+    <div class="navBar"><!-- debut navBar -->      
+        <a href="#zoneOrange">zone orange</a>
+        <a href="#zoneViolet">zone violet</a>
+        <a href="#zoneRouge">zone rouge</a>       
     </div><!-- fin de la navBar -->
     <div id="container">
-        <div class="main">
-            <section>a</section>
-            <section>a</section>
-            <section>a</section>
-            <section>a</section>
-        </div><!-- fin de main -->
-    </div>
+        <section class="section"> <!-- debut section general -->
+            <section class="centre"><!-- debut section blanche -->
+                <section class="orange"><!-- debut section orange -->
+                    <h2>orange</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores quasi quae aut ipsum facilis rem, magnam, exercitationem quod corrupti, neque eveniet consectetur nostrum. Labore reiciendis incidunt minus, eius provident amet.</p>
+                </section><!-- Fin section orange -->
+                <section class="violet"><!-- debut section violet -->
+                      <h2>Titre de la zone violet</h2>
+                      <figure>
+                            <img src="img/philharmonie01.png" alt="philharmonie" title="philharmonie" width="150px" height="120px"><!-- image philharmonie -->
+                            <figcaption>La philharmonie de paris</figcaption><!-- légende de l'image philharmonie --> 
+                        </figure>
+                </section><!-- Fin section violet -->
+                <section class="rouge"><!-- debut section rouge -->
+                    <h2>rouge</h2>
+                    <aside>
+                        <figure>
+                            <img src="img/cdm-2018.jpg" alt="cdm-2018" title="cdm-2018" width="500px" height="300px" ><!-- image zoning -->
+                        </figure>
+                    </aside>
+                </section><!-- Fin section rouge -->
+                <div class="main"><!-- contenu principal -->
+                    <h3>Formulaire <i class="fab fa-wpforms"></i></h3>
+            
+                    <section class="formulaire">
+                    <!-- method ; manière de faire circuler les données (POST ou GET) -->
+                    <!-- action ; url de destination -->
+                    <!-- enctype ; pour envoyer le fichier correctement -->
+                        <form method="POST" action="inscription.php" enctype="multipart/form-data">
+                            <label for="pseudo" id="pseudo">Pseudo</label>
+                            <input type="text" id="pseudo" name="pseudo" required><br>
+            
+                            <label for="prenom">Prénom</label>
+                            <input type="text" id="prenom" name="prenom" required><br>
+            
+                            <label for="password">Mots de passe</label>
+                            <input type="password" id="password" name="password" required><br>
+            
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <br>
+            
+                            <h3>Quels sont vos équipes préférés ?</h3>
+                            <!-- (label+input)*3 tout crée d'un coup -->
+                            <label for="avis">Ligue 1</label>
+                                <select name="depart" id="depart">
+                                    <option value="C.Ronaldo">PSG</option>
+                                    <option value="Neymar.Jr">Lyon</option>
+                                    <option value="L.Messi">Monaco</option>
+                                </select>
+                                <label for="avis">Liga BBVA</label>
+                                <select name="depart" id="depart">
+                                    <option value="C.Ronaldo">Réal Madrid</option>
+                                    <option value="Neymar.Jr">Barcelone</option>
+                                    <option value="L.Messi">Atlético Madrid</option>
+                                </select>
+                                <label for="avis">Serie A</label>
+                                <select name="depart" id="depart">
+                                    <option value="C.Ronaldo">Juventus</option>
+                                    <option value="Neymar.Jr">Iner Milan</option>
+                                    <option value="L.Messi">AS Roma</option>
+                                </select>
+                                <label for="avis">Premier league</label>
+                                <select name="depart" id="depart">
+                                    <option value="C.Ronaldo">Man United</option>
+                                    <option value="Neymar.Jr">Man City</option>
+                                    <option value="L.Messi">Arsenal</option>
+                                </select>
+                                
+                                <section class="fondOrange">
+                                        <hr>
+                                <h3>Quelle joueur serat le ballon d'or 2018 ?</h3>
+                                <!-- Menu déroulant pour faire son choix -->
+                                <label for="avis">Votre choix</label>
+                                <select name="depart" id="depart">
+                                    <option value="C.Ronaldo">C.Ronaldo</option>
+                                    <option value="Neymar.Jr">Neymar.Jr</option>
+                                    <option value="L.Messi">L.Messi</option>
+                                </select>                        
+                                <br>
+                                <!-- permet de répondre a la question posé et d'envoyer sa réponse -->
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="15" cols="60">Quelles sont vos raisons ?</textarea>
+                            </section><br>
+                            <section class="fondBleu">
+                                    <!-- method ; manière de faire circuler les données (POST ou GET) -->
+                                    <!-- action ; url de destination -->
+                                    <!-- enctype ; pour envoyer le fichier correctement -->
+                                    <hr>
+                                    <h3>Qui va remporté la coupe du monde 2018 ?</h3>
+                                        <form method="POST" action="inscription.php" enctype="multipart/form-data">
+                                            <br>
+                                            <!-- (label+input)*3 tout crée d'un coup -->
+                                            <section class="championnat">
+                                                <input type="checkbox" id="France" value="France" checked>
+                                                <label for="France">France</label>
+                                                <input type="checkbox" id="Portugal" value="Portugal" checked>
+                                                <label for="Portugal" class="Portugal">Portugal</label>
+                                                <input type="checkbox" id="Espagne" value="Espagne">
+                                                <label for="Espagne">Espagne</label>
+                                                <input type="checkbox" id="Allemagne" value="Allemagne">
+                                                <label for="Allemagne">Allemagne</label>
+                                                <br>
+                                                <input type="checkbox" id="Uruguay" value="Uruguay">
+                                                <label for="Uruguay">Uruguay</label>
+                                                <input type="checkbox" id="Argentine" value="Argentine">
+                                                <label for="Argentine">Argentine</label>
+                                                <input type="checkbox" id="Colombie" value="Colombie">
+                                                <label for="Colombie">Colombie</label>
+                                                <input type="checkbox" id="Bresil" value="Bresil">
+                                                <label for="Bresil">Bresil</label>
+                                                <input type="checkbox" id="Mexique" value="Mexique">
+                                                <label for="Mexique">Mexique</label>
+                                                <br>
+                                                <br>
+            
+                                                <input type="submit" name="envoyer" id="Envoyer">
+                                                <input type="reset" name="annuler" id="Annuler">
+                                            </section>
+                                        </form>
+                                </section><!-- fin section classr="formulaire" -->
+                            
+                        </form>
+                    </section>
+                   
+                    
+                </div><!-- fin id main -->
+            </section><!-- Fin section blanche -->
+        </section><!-- Fin section general -->
+        
+        <div class="clear"></div>
+        
+    </div><!-- fin de main -->
     
+    
+    <footer>Juin 2018</footer>
 </body>
 </html>
+
