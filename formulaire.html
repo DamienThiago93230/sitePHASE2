@@ -24,7 +24,8 @@
     <header>
         <div id="logo">
             <a href="#logo">
-                <button type="button"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+                <!-- <button type="button"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button> -->
+                <span class="boutonHaut"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></span>
             </a>
             <img src="img/logo.png" alt="logo">
         </div><!-- fin id logos -->
@@ -63,14 +64,14 @@
     </nav><!-- fin nav -->
 
     <main><!-- contenu principal -->
-        <h2>Formulaire <i class="fab fa-wpforms"></i></h2>
-
+        
         <section class="formulaire">
+            <h2>Formulaire <i class="fab fa-wpforms"></i></h2>
         <!-- method ; manière de faire circuler les données (POST ou GET) -->
         <!-- action ; url de destination -->
         <!-- enctype ; pour envoyer le fichier correctement -->
             <form method="POST" action="inscription.php" enctype="multipart/form-data">
-                <label for="pseudo" id="pseudo">Pseudo</label>
+                <label for="pseudo">Pseudo</label>
                 <input type="text" id="pseudo" name="pseudo" required><br>
 
                 <label for="prenom">Prénom</label>
@@ -98,7 +99,7 @@
 
                 <p>Si vous devez sauvez un légume de la destruction ; lequel ?</p>
                 <!-- Menu déroulant pour faire son choix -->
-                <label for="avis">Votre choix</label>
+                <label for="depart">Votre choix</label>
                 <select name="depart" id="depart">
                     <option value="poireau">Poireau</option>
                     <option value="brocoli">brocoli</option>

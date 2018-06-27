@@ -1,0 +1,51 @@
+@charset "UTF-8";/* début de la page */
+
+body {
+   background-image: url(../img/black-Soccer-Ball-Timeless-Treasures-fabric-from-the-USA-169309-2.jpg);
+   margin: 0 auto;
+   text-align: center;
+}
+
+/* En-tête du tableau */
+#zoning2 {
+    /* width: 1200px; */
+    width: 60.606060%;
+    height: 800px;
+    margin: 0 auto;
+}/* colonne de droite */
+
+#zoning2 header {
+
+   height: 150px;
+   background: grey;
+}
+
+/* colonne de gauche */
+
+#zoning2 aside {
+    /* width: 200px; */
+    width: 16.6666667%;
+    height: 800px;
+    background: blue;
+    float: left;
+}/* contient tout le tableau */
+
+
+#zoning2 .millieu {
+    /* width: 800px; */
+    width: 66.6666666%;
+    height: 800px;
+    background: white;
+    float: left;
+}
+
+footer {
+    height: 100px;
+    background: pink;
+}
+
+.clear {
+   clear:both;
+}
+
+/* fin de la page zoning1 */

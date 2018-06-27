@@ -210,6 +210,7 @@ section {
     margin-top: 20px;
     margin-top: 0;
     width: 750px;
+    height:534px;
     float: right;
     border-radius: 0px 100px 100px 0px;
     text-align: left;
@@ -459,6 +460,14 @@ img[src="img/toureiffel.jpg"] {/* on cible que cette image la */
     text-align: center;
     font-size: 25px;
     border: 2px solid darkorange;
+}
+
+hr {
+    width: 50%;;
+}
+
+.cacher {
+   display: none;
 }
 
 /* Exercice sur le float */
@@ -916,6 +925,12 @@ li .far:hover {
     box-shadow: none;
     transition-duration: 0.5s;
     text-shadow: 1px 5px 10px grey;
+}
+
+img[src="img/volcans.jpg"] {/* on cible que cette image la */
+    display: block;
+    background: white;
+    width: 260px;
 }
 
 /********Fin page des liens********/
